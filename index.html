@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Scoops - Ice Cream Parlour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar glassy-navbar">
+            <div class="logo">🍦 Creative <span class="logo-red">Scoops</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#flavours">Flavours</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon"><i class="fa fa-shopping-cart"></i> <span class="cart-count">0</span></div>
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode" style="background:none;border:none;cursor:pointer;font-size:1.5rem;"><i class="fa fa-moon"></i></button>
+        </nav>
+    </header>
+    <section class="hero-gallery animated-hero" id="home">
+        <div class="hero-bg-blob"></div>
+        <div class="hero-center">
+            <div class="hero-image-circle animated-float">
+                <img src="./images/Mango Tango.png" alt="Ice Cream Hero">
+            </div>
+            <h1 class="hero-headline animated-slidein">Welcome to <span style="color: red;">Ice Cream Gallery</span></h1>
+            <p class="hero-subtitle animated-fadein">A magazine of magical flavours &amp; sweet adventures</p>
+            <a href="#flavours" class="cta-btn animated-bounce">See Flavours</a>
+        </div>
+    </section>
+    <section class="flavours-section" id="flavours">
+        <h2 class="section-title">Our Flavours</h2>
+        <div class="flavours-grid">
+            <!-- Flavour Cards -->
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/Galaxy Swirl.png" alt="Galaxy Swirl"></div>
+                <div class="flavour-info">
+                    <span class="badge badge-bounce">Best Seller</span>
+                    <h3>Galaxy Swirl</h3>
+                    <p class="flavour-desc">Cosmic colors, fruity flavors, and edible glitter!</p>
+                    <div class="flavour-price">₹199</div>
+                    <button class="add-to-cart-btn" data-flavour="Galaxy Swirl" data-price="199">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/Mango Tango.png" alt="Mango Tango"></div>
+                <div class="flavour-info">
+                    <span class="badge badge-pulse">New</span>
+                    <h3>Mango Tango</h3>
+                    <p class="flavour-desc">Fresh mangoes, tangy twist, and a tropical vibe.</p>
+                    <div class="flavour-price">₹179</div>
+                    <button class="add-to-cart-btn" data-flavour="Mango Tango" data-price="179">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/Choco Lava Burst.png" alt="Choco Lava Burst"></div>
+                <div class="flavour-info">
+                    <h3>Choco Lava Burst</h3>
+                    <p class="flavour-desc">Rich chocolate, gooey fudge, and a molten surprise.</p>
+                    <div class="flavour-price">₹209</div>
+                    <button class="add-to-cart-btn" data-flavour="Choco Lava Burst" data-price="209">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/blueberry.jpg" alt="Berrylicious Dream"></div>
+                <div class="flavour-info">
+                    <span class="badge badge-pulse">Limited</span>
+                    <h3>Berrylicious Dream</h3>
+                    <p class="flavour-desc">Mixed berries, creamy base, and a hint of mint.</p>
+                    <div class="flavour-price">₹189</div>
+                    <button class="add-to-cart-btn" data-flavour="Berrylicious Dream" data-price="189">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/Cotton Candy Cloud.png" alt="Cotton Candy Cloud"></div>
+                <div class="flavour-info">
+                    <h3>Cotton Candy Cloud</h3>
+                    <p class="flavour-desc">Fluffy cotton candy ice cream with pastel sprinkles.</p>
+                    <div class="flavour-price">₹169</div>
+                    <button class="add-to-cart-btn" data-flavour="Cotton Candy Cloud" data-price="169">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/Lavender Honey Bliss.png" alt="Lavender Honey Bliss"></div>
+                <div class="flavour-info">
+                    <span class="badge badge-pulse">New</span>
+                    <h3>Lavender Honey Bliss</h3>
+                    <p class="flavour-desc">Delicate lavender and golden honey, a floral delight.</p>
+                    <div class="flavour-price">₹219</div>
+                    <button class="add-to-cart-btn" data-flavour="Lavender Honey Bliss" data-price="219">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/Classic Vanilla.png" alt="Classic Vanilla"></div>
+                <div class="flavour-info">
+                    <h3>Classic Vanilla</h3>
+                    <p class="flavour-desc">Pure, creamy, and classic vanilla bean bliss.</p>
+                    <div class="flavour-price">₹159</div>
+                    <button class="add-to-cart-btn" data-flavour="Classic Vanilla" data-price="159">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/Rich Chocolate.png" alt="Rich Chocolate"></div>
+                <div class="flavour-info">
+                    <h3>Rich Chocolate</h3>
+                    <p class="flavour-desc">Deep, decadent, and velvety chocolate indulgence.</p>
+                    <div class="flavour-price">₹199</div>
+                    <button class="add-to-cart-btn" data-flavour="Rich Chocolate" data-price="199">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/Strawberry Sweetheart.png" alt="Strawberry Sweetheart"></div>
+                <div class="flavour-info">
+                    <h3>Strawberry Sweetheart</h3>
+                    <p class="flavour-desc">Fresh strawberries swirled into a creamy delight.</p>
+                    <div class="flavour-price">₹179</div>
+                    <button class="add-to-cart-btn" data-flavour="Strawberry Sweetheart" data-price="179">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/Butterscotch Crunch.png" alt="Butterscotch Crunch"></div>
+                <div class="flavour-info">
+                    <h3>Butterscotch Crunch</h3>
+                    <p class="flavour-desc">Golden butterscotch with crunchy, sweet bits.</p>
+                    <div class="flavour-price">₹169</div>
+                    <button class="add-to-cart-btn" data-flavour="Butterscotch Crunch" data-price="169">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/Royal Anjeer.png" alt="Royal Anjeer"></div>
+                <div class="flavour-info">
+                    <h3>Royal Anjeer</h3>
+                    <p class="flavour-desc">Sweet figs blended for a rich, royal treat.</p>
+                    <div class="flavour-price">₹229</div>
+                    <button class="add-to-cart-btn" data-flavour="Royal Anjeer" data-price="229">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flavour-card animated-card">
+                <div class="flavour-img-square"><img src="images/American Dryfruit.png" alt="American Dryfruit"></div>
+                <div class="flavour-info">
+                    <h3>American Dryfruit</h3>
+                    <p class="flavour-desc">A mix of cashews, almonds, and tutti-frutti.</p>
+                    <div class="flavour-price">₹239</div>
+                    <button class="add-to-cart-btn" data-flavour="American Dryfruit" data-price="239">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="specials-timeline animated-timeline" id="specials">
+        <h2 class="section-title">Specials</h2>
+        <div class="timeline-wrapper">
+            <svg class="timeline-wave" viewBox="0 0 600 80"><path d="M0,40 Q150,0 300,40 T600,40" fill="none" stroke="#fcae3e" stroke-width="6"/></svg>
+            <div class="timeline-cards">
+                <div class="timeline-card animated-timeline-card">
+                    <span class="timeline-icon">🌈</span>
+                    <h3>Rainbow Pop</h3>
+                    <p>Colorful, fruity, and fun! Limited time only.</p>
+                </div>
+                <div class="timeline-card animated-timeline-card">
+                    <span class="timeline-icon">🍫</span>
+                    <h3>Choco Overload</h3>
+                    <p>Triple chocolate, fudge, and brownie bits.</p>
+                </div>
+                <div class="timeline-card animated-timeline-card">
+                    <span class="timeline-icon">🍓</span>
+                    <h3>Strawberry Shortcake</h3>
+                    <p>Fresh strawberries, cake chunks, and cream.</p>
+                </div>
+                <div class="timeline-card animated-timeline-card">
+                    <span class="timeline-icon">🍯</span>
+                    <h3>Honey Almond Crunch</h3>
+                    <p>Sweet honey, roasted almonds, and caramel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-gallery about-modern" id="about">
+        <div class="about-columns">
+            <div class="about-text-modern">
+                <h2>About Us <span class="about-underline"></span></h2>
+                <p>We're passionate about crafting the most creative, delicious ice creams in town. Our team blends classic recipes with bold new ideas, all served in a fun, friendly space. Come taste the adventure!</p>
+                <div class="about-funfact">🍦 <em>Fun Fact:</em> Our Galaxy Swirl is made with edible glitter and is our all-time bestseller!</div>
+            </div>
+        </div>
+        <div class="about-bg-blob"></div>
+    </section>
+    <section class="contact-modal" id="contact-modal">
+        <div class="contact-bubble glassy-modal">
+            <button class="close-modal">&times;</button>
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer-gallery">
+        <div class="footer-gradient"></div>
+        <div class="footer-content">
+            <span>&copy; 2025 Ice Cream Gallery</span>
+            <div class="footer-socials">
+                <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal" aria-modal="true" role="dialog" tabindex="-1" style="display:none;">
+        <div class="cart-modal-backdrop"></div>
+        <div class="cart-modal-content">
+            <button class="close-cart-modal" aria-label="Close cart">&times;</button>
+            <h2>Your Cart</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total-row">
+                <span>Total:</span>
+                <span class="cart-total">₹0</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>                                                 
